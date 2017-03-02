@@ -1,0 +1,15 @@
+$body-bg: #501C59;
+$text-color: white;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "pages";
+@import "users";
+
+html {
+  height: 100%;
+
+  body {
+    background: linear-gradient($body-bg, #42005A);
+  }
+}
