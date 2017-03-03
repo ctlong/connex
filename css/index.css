@@ -1,0 +1,29 @@
+.navbar-fixed-top {
+	/*background-color: #51005A; */
+}
+
+#startbtn {
+	background-color: white; 
+  	opacity: 0.75;
+  	color: #51005A;
+  	font-weight: bold;
+  	border-color: white;
+}
+
+#startbtn:hover {
+	opacity: 1.0;
+	border-color: #51005A;
+}
+
+#icons {
+	padding: 20px;
+}
+
+#icons > img {
+	height: 40px;
+	padding-right: 30px;
+}
+
+header {
+	background-image: url("../assets/MainPic.png");
+}
