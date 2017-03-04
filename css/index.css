@@ -21,6 +21,44 @@ header {
 	background: url("../assets/bg-pattern.png"), #e8e8e8;
 }
 
+#how_it_works h3 {
+	color: #51005A;
+	font-weight: bold;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#how_it_works img {
+	max-width: 100%;
+}
+
+#heading {
+	margin-top: -90px;
+	color: #51005A;
+	font-weight: bold;
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	height: 100px;
+	max-width: 100%;
+}
+
+#arrow1 {
+	left: 31%;
+}
+
+#arrow2 {
+	left: 62%;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* the navbar when it has a background after scrolling for a bit */ 
 .navbar-default.affix{
 	background-color: #e8e8e8;
