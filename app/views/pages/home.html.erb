@@ -1,12 +1,106 @@
-<div class="row" id="homepage">
-  <div class="col-xs-12 text-center">
-    <%= image_tag "Title2", class: "col-xs-12" %>
-    <h3>Connecting the world together</h3>
-    <p>We provide a single platform for the simple exchange of every social connection a user may want.</p>
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <%= image_tag "Title", height: "50px" %>
+            </a>
+        </div>
 
-    <div class="col-xs-12">
-      <button class="col-xs-4 col-xs-offset-1 btn btn-default">Login</button>
-      <button class="col-xs-4 col-xs-offset-2 btn btn-default">Sign up</button>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" id="menu_options">
+                <li>
+                    <a class="page-scroll" href="#how_it_works">How It Works</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#">Sign Up</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#">Log In</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-  </div>
-</div>
+    <!-- /.container-fluid -->
+</nav>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="header-content" style="margin-left: 10%">
+                    <div class="header-content-inner">
+                        <h1 style="margin-bottom: 0px; margin-top: 40px">Meet. Connect. Share.</h1>
+                        <h3 style="margin-top: 0px">Your social card is just a tap away.</h3>
+
+                        <div class="row" style="padding: 20px">
+                            <a href="#download" id="startbtn" class="btn btn-outline btn-xl page-scroll">
+                            Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-sm-5">
+                <div class="device-container">
+                    <div class="device-mockup iphone6_plus portrait white">
+                        <div class="device">
+                            <div class="screen">
+                                <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                               <!--  <img src="img/demo-screen-1.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="button"> -->
+                                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                            <!-- </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</header>
+
+<section id="how_it_works" class="download text-center">
+    <h2 id="heading">How It Works</h2>
+    <div class="container">
+        <%= image_tag "PurpleArrow", class: "arrow", id: "arrow1" %>
+        <%= image_tag "PurpleArrow", class: "arrow", id: "arrow2" %>
+        <div class="row centered">
+            <div class="col-sm-4">
+                <h3> Choose what apps you want to share </h3>
+            </div>
+            <div class="col-sm-4">
+                <h3> Enter the phone number you want to share with </h3>
+            </div>
+            <div class="col-sm-4">
+                <h3> Connect </h3>
+            </div>
+        </div>
+        <div class="row centered">
+            <div class="col-sm-4">
+                <%= image_tag "SelectApps", width: "70%" %>
+            </div>
+            <div class="col-sm-4">
+                <%= image_tag "PurplePhone", width: "100%" %>
+            </div>
+            <div class="col-sm-4">
+                <%= image_tag "PurpleAdd", width: "80%" %>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2017 Connex. All Rights Reserved.</p>
+        <ul class="list-inline">
+            <li>
+                <a href="#page-top">Return to Top</a>
+            </li>
+        </ul>
+    </div>
+</footer>

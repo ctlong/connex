@@ -1,0 +1,92 @@
+header {
+  background-image: url("../assets/MainPic.png");
+}
+
+#startbtn {
+  background-color: white; 
+    opacity: 0.75;
+    color: #51005A;
+    font-weight: bold;
+    border-color: white;
+    transition: 0.3s ease;
+}
+
+#startbtn:hover {
+  opacity: 1.0;
+  border-color: #51005A;
+  transform: scale(1.1, 1.1);
+}
+
+#how_it_works {
+  background: url("../assets/bg-pattern.png"), #e8e8e8;
+}
+
+#how_it_works h3 {
+  color: #51005A;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#how_it_works img {
+  max-width: 100%;
+}
+
+#heading {
+  margin-top: -90px;
+  color: #51005A;
+  font-weight: 500;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  max-width: 100%;
+}
+
+#arrow1 {
+  left: 31%;
+}
+
+#arrow2 {
+  left: 62%;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* the navbar when it has a background after scrolling for a bit */ 
+.navbar-default.affix{
+  background-color: #e8e8e8;
+  opacity:0.9; 
+  color:#51005A;
+  min-height:70px;
+}
+
+.opaque{
+  opacity:1.0 !important; 
+}
+
+/* change the logo to purple when navbar has white background */ 
+.navbar-default.affix img{
+  content: url("../assets/TitlePurple.png");
+}
+
+/* pad the menu options so they are more centered in navbar */ 
+#menu_options > li {
+  padding-top: 7px;
+}
+
+/* change the logo to purple when navbar has white background */ 
+.navbar-default.affix #menu_options > li > a {
+  color: #51005A;
+}
+
+.navbar-default.affix #menu_options > li > a:hover,
+.navbar-default .nav>li.active>a,.navbar-default .nav>li.active>a:focus {
+  color: #e820e0 !important;
+}
