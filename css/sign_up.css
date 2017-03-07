@@ -1,0 +1,67 @@
+header {
+	background-image: url("../assets/MainPicNoApp.png");
+}
+
+input {
+	color: #51005A;
+}
+
+#signupbtn {
+	margin-top: 30px;
+	font-size: 11pt;
+	background-color: white; 
+  	opacity: 0.75;
+  	color: #51005A;
+  	font-weight: bold;
+  	border-color: white;
+  	transition: 0.3s ease;
+}
+
+#signupbtn:hover {
+	opacity: 1.0;
+	border-color: #51005A;
+	transform: scale(1.1, 1.1);
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label h3 {
+	float: right;
+	padding-right: 30px;
+}
+
+.inputs > h3 {
+	/*float: left;*/
+}
+
+/* the navbar when it has a background after scrolling for a bit */ 
+.navbar-default.affix{
+	background-color: #e8e8e8;
+	opacity:0.9; 
+	color:#51005A;
+	min-height:70px;
+}
+
+/* change the logo to purple when navbar has white background */ 
+.navbar-default.affix img{
+	content: url("../assets/TitlePurple.png");
+}
+
+/* pad the menu options so they are more centered in navbar */ 
+#menu_options > li {
+	padding-top: 7px;
+}
+
+/* change the logo to purple when navbar has white background */ 
+.navbar-default.affix #menu_options > li > a {
+	color: #51005A;
+}
+
+.navbar-default.affix #menu_options > li > a:hover,
+.navbar-default .nav>li.active>a,.navbar-default .nav>li.active>a:focus {
+	color: #e820e0 !important;
+}
