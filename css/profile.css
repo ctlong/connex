@@ -16,7 +16,7 @@ input:hover, input:focus {
 	opacity: 1.0;
 }
 
-#sharebtn, #editbtn {
+#sharebtn, #editbtn, #view_loginbtn, #view_signupbtn {
 	margin: 30px 20px;
 	padding: 10px;
 	width: 200px;
@@ -29,10 +29,19 @@ input:hover, input:focus {
   	transition: 0.3s ease;
 }
 
-#sharebtn:hover, #editbtn:hover {
+#sharebtn:hover, #editbtn:hover, #view_loginbtn:hover, #view_signupbtn:hover{
 	opacity: 1.0;
 	border-color: #51005A;
 	transform: scale(1.1, 1.1);
+}
+
+#view_loginbtn, #view_signupbtn {
+	margin: 0px 20px;
+}
+
+#view_sharetext {
+	margin-top: 30px;
+	margin-bottom: 0px;
 }
 
 .centered {
