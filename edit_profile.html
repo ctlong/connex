@@ -25,7 +25,7 @@
     <!-- Theme CSS -->
     <link href="css/new-age.min.css" rel="stylesheet">
     <!-- local css --> 
-    <link href="css/sign_up.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -45,13 +45,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right" id="menu_options">
                     <li>
-                        <a class="page-scroll" href="#how_it_works">How It Works</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll active" href="sign_up.html">Sign Up</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="log_in.html">Log In</a>
+                        <a class="page-scroll" href="index.html">Log Out</a>
                     </li>
                 </ul>
             </div>
@@ -61,39 +55,71 @@
     </nav>
 
     <header>
-        <div class="container">
+        <div class="container" id="content">
             <div class="row">
-                <div class="col-sm-12 centered" style="padding-top: 15%">
-                    <h1>Log In</h1>
+                <div class="col-sm-12 centered" style="padding-top: 100px">
+                    <h1>Edit My Profile</h1>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-12">
-                    <form>
-                        <div class="row centered">
-                            <div class="col-sm-6 label">
-                                <h3>Username</h3>
-                            </div>
-                            <div class="col-sm-6 input">
-                                <h3><input type="text" name="username"></h3>
-                            </div>
-                        </div>
-                         
-                        <div class="row centered">
-                            <div class="col-sm-6 label">
-                                <h3>Password</h3>
-                            </div>
-                            <div class="col-sm-6 input">
-                                <h3><input type="password" name="password"></h3>
-                            </div>
-                        </div>
-    
-                        <div class="row centered">
-                            <input type="submit" id="signupbtn" value="Log In" class="btn btn-outline btn-xl">
-                        </div>
-                    </form>
+
+            <div class="row centered">
+                <div class="col-sm-6 label">
+                    <h4>Username</h4>
                 </div>
+                <div class="col-sm-6">
+                    <h4>your username</h4>
+                </div>
+            </div>
+
+            <div class="row centered">
+                <div class="col-sm-6 label">
+                    <h4>Phone</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4><input type="text" name="phone"></h4>
+                </div>
+            </div>
+
+            <div class="row centered">
+                <div class="col-sm-6 label">
+                    <h4>Facebook</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4><input type="text" name="facebook"></h4>
+                </div>
+            </div>
+
+            <div class="row centered">
+                <div class="col-sm-6 label">
+                    <h4>Instagram</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4><input type="text" name="instagram"></h4>
+                </div>
+            </div>
+
+            <div class="row centered">
+                <div class="col-sm-6 label">
+                    <h4>Twitter</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4><input type="text" name="twitter"></h4>
+                </div>
+            </div>
+
+            <div class="row centered">
+                <div class="col-sm-6 label">
+                    <h4>Snapchat</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4><input type="text" name="snapchat"></h4>
+                </div>
+            </div>
+
+            <div class="row centered">
+                <input type="submit" id="editbtn" value="Save" class="btn btn-outline btn-m">
+                <input type="submit" id="sharebtn" value="Cancel" class="btn btn-outline btn-m">
             </div>
         </div>
     </header>

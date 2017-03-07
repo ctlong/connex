@@ -1,0 +1,76 @@
+header {
+	background: url("../assets/bg-pattern-light.png"), #51005A; /* For browsers that do not support gradients */
+    background: url("../assets/bg-pattern-light.png"), -webkit-radial-gradient(#51005A 50%, #70007c); /* For Safari 5.1 to 6.0 */
+    background: url("../assets/bg-pattern-light.png"), -o-radial-gradient(#51005A 50%, #70007c); /* For Opera 11.1 to 12.0 */
+    background: url("../assets/bg-pattern-light.png"), -moz-radial-gradient(#51005A 50%, #70007c); /* For Firefox 3.6 to 15 */
+    background: url("../assets/bg-pattern-light.png"), radial-gradient(#51005A 50%, #70007c); /* Standard syntax */
+}
+
+input {
+	color: #51005A;
+	opacity: 0.8;
+	transition: 0.3s ease;
+}
+
+input:hover, input:focus {
+	opacity: 1.0;
+}
+
+#sharebtn, #editbtn {
+	margin: 30px 20px;
+	padding: 10px;
+	width: 200px;
+	font-size: 9pt;
+	background-color: white; 
+  	opacity: 0.75;
+  	color: #51005A;
+  	font-weight: bold;
+  	border-color: white;
+  	transition: 0.3s ease;
+}
+
+#sharebtn:hover, #editbtn:hover {
+	opacity: 1.0;
+	border-color: #51005A;
+	transform: scale(1.1, 1.1);
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label h4 {
+	float: right;
+	padding-right: 30px;
+}
+
+
+/* the navbar when it has a background after scrolling for a bit */ 
+.navbar-default.affix{
+	background-color: #e8e8e8;
+	opacity:0.9; 
+	color:#51005A;
+	min-height:70px;
+}
+
+/* change the logo to purple when navbar has white background */ 
+.navbar-default.affix img{
+	content: url("../assets/TitlePurple.png");
+}
+
+/* pad the menu options so they are more centered in navbar */ 
+#menu_options > li {
+	padding-top: 7px;
+}
+
+/* change the logo to purple when navbar has white background */ 
+.navbar-default.affix #menu_options > li > a {
+	color: #51005A;
+}
+
+.navbar-default.affix #menu_options > li > a:hover,
+.navbar-default .nav>li.active>a,.navbar-default .nav>li.active>a:focus {
+	color: #e820e0 !important;
+}
