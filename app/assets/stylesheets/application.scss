@@ -1,15 +1,12 @@
-$body-bg: #501C59;
-$text-color: white;
+// Bootstrap updates below
+
+// Bootstrap updates above
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "pages";
 @import "users";
 
-html {
-  height: 100%;
+// Code-wide styles below
 
-  body {
-    background: linear-gradient($body-bg, #42005A);
-  }
-}
+// Code-wide styles above
