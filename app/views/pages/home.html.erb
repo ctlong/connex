@@ -17,7 +17,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">How It Works</a></li>
+          <li><a href="#how_it_works">How It Works</a></li>
           <li><%= link_to 'Sign Up', signup_path %></li>
           <li><%= link_to 'Log In', login_path %></li>
         </ul>
@@ -39,4 +39,34 @@
       </div>
     </div>
   </header>
+
+  <section id="how_it_works" class="download text-center">
+    <h2>How It Works</h2>
+    <div class="container">
+      <%= image_tag 'purple-arrow.png', alt: 'arrow', class: 'arrow', id: 'arrow1' %>
+      <%= image_tag 'purple-arrow.png', alt: 'arrow', class: 'arrow', id: 'arrow2' %>
+      <div class="row centered">
+        <div class="col-sm-4">
+          <h3> Choose what apps you want to share </h3>
+        </div>
+        <div class="col-sm-4">
+          <h3> Enter the phone number you want to share with </h3>
+        </div>
+        <div class="col-sm-4">
+          <h3> Connect </h3>
+        </div>
+      </div>
+      <div class="row centered">
+        <div class="col-sm-4">
+          <img src="assets/SelectApps.png" width="70%">
+        </div>
+        <div class="col-sm-4">
+          <img src="assets/PurplePhone.png" width="100%">
+        </div>
+        <div class="col-sm-4">
+          <img src="assets/PurpleAdd.png" width="80%">
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
