@@ -17,7 +17,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#how_it_works">How It Works</a></li>
+          <li><a href="#how_it_works" class="visible-lg">How It Works</a></li>
           <li><%= link_to 'Sign Up', signup_path %></li>
           <li><%= link_to 'Log In', login_path %></li>
         </ul>
@@ -40,7 +40,7 @@
     </div>
   </header>
 
-  <section id="how_it_works" class="download text-center">
+  <section id="how_it_works" class="text-center visible-lg">
     <h2>How It Works</h2>
     <div class="container">
       <%= image_tag 'purple-arrow.png', alt: 'arrow', class: 'arrow', id: 'arrow1' %>
@@ -58,13 +58,13 @@
       </div>
       <div class="row centered">
         <div class="col-sm-4">
-          <img src="assets/SelectApps.png" width="70%">
+          <%= image_tag 'select-apps.png', alt: 'select apps', width: '80%' %>
         </div>
         <div class="col-sm-4">
-          <img src="assets/PurplePhone.png" width="100%">
+          <%= image_tag 'purple-phone.png', alt: 'purple phone' %>
         </div>
         <div class="col-sm-4">
-          <img src="assets/PurpleAdd.png" width="80%">
+          <%= image_tag 'purple-add.png', alt: 'purple add' %>
         </div>
       </div>
     </div>

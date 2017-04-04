@@ -14,7 +14,18 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body id="page-top">
     <%= yield %>
+
+    <footer>
+      <div class="container text-center">
+        <p>&copy; 2017 Connex. All Rights Reserved.</p>
+        <ul class="list-inline">
+          <li>
+            <a href="#page-top">Return to Top</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

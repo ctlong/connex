@@ -8,5 +8,24 @@
 @import "users";
 
 // Code-wide styles below
+footer {
+  padding-top: 14px;
+  padding-bottom: 6px;
+  background: black;
+  color: grey;
 
+  p {
+    margin-bottom: 1px;
+  }
+
+  ul {
+    a {
+      color: grey;
+    }
+    a:hover {
+      color: #f4b841;
+      text-decoration: none;
+    }
+  }
+}
 // Code-wide styles above

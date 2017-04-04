@@ -6,10 +6,14 @@
 
     .navbar-header {
       img {
-        height: 25px;
+        height: 35px;
       }
       img:hover {
         cursor: pointer;
+      }
+
+      .navbar-brand {
+        padding-top: 10px;
       }
     }
   }
@@ -72,9 +76,45 @@
   }
 
   #how_it_works {
+    background: url(<%= asset_path 'bg-pattern.png' %>), #e8e8e8;
+    color: #51005A;
+
+    img {
+      max-width: 100%;
+    }
+
+    h2 {
+      font-weight: bold;
+      margin-top: 0;
+      padding-top: 30px;
+      font-size: 50px;
+    }
+
+    h3 {
+      font-weight: bold;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
     .arrow {
+      position: absolute;
+      top: 140%;
       height: 100px;
       max-width: 100%;
+    }
+
+    #arrow1 {
+      left: 31%;
+    }
+
+    #arrow2 {
+      left: 62%;
+    }
+
+    .centered {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
