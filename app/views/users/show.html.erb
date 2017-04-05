@@ -14,7 +14,7 @@
         <% if @current_user.name.present? %>
           <p class="col-xs-3"><%= @current_user.name %></p>
         <% else %>
-        <%= link_to "_________", update_path, class: "col-xs-3" %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
       <% end %>
       </div>
 
@@ -23,7 +23,7 @@
       <% if @current_user.phone.present? %>
         <p class="col-xs-3"><%= @current_user.phone %></p>
       <% else %>
-        <%= link_to "_________", update_path, class: "col-xs-3" %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
       <% end %>
       </div>
 
@@ -32,7 +32,7 @@
       <% if @current_user.facebook.present? %>
         <p class="col-xs-3"><%= @current_user.facebook %></p>
       <% else %>
-        <%= link_to "_________", update_path, class: "col-xs-3" %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
       <% end %>
       </div>
 
@@ -41,7 +41,7 @@
       <% if @current_user.instagram.present? %>
         <p class="col-xs-3"><%= @current_user.instagram %></p>
       <% else %>
-        <%= link_to "_________", update_path, class: "col-xs-3" %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
       <% end %>
       </div>
 
@@ -50,7 +50,7 @@
       <% if @current_user.twitter.present? %>
         <p class="col-xs-3"><%= @current_user.twitter %></p>
       <% else %>
-        <%= link_to "_________", update_path, class: "col-xs-3" %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
       <% end %>
       </div>
 
@@ -59,7 +59,7 @@
       <% if @current_user.snapchat.present? %>
         <p class="col-xs-3"><%= @current_user.snapchat %></p>
       <% else %>
-        <%= link_to "_________", update_path, class: "col-xs-3" %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
       <% end %>
       </div>
 
@@ -67,7 +67,7 @@
         <div class="col-xs-4 col-xs-offset-2" id="first_button">
           <%= link_to "Edit Info", update_path, class: "btn btn-default"  %>
         </div>
-        <div class="col-xs-4">
+        <div class="col-xs-4" id="second_button">
           <a class="btn btn-default">Copy Share Url</a>
         </div>
       </div>

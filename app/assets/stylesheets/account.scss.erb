@@ -6,10 +6,14 @@
     background: url(<%= asset_path "bg-pattern-light" %>), -moz-radial-gradient(#51005A 50%, #70007c); /* For Firefox 3.6 to 15 */
     background: url(<%= asset_path "bg-pattern-light" %>), radial-gradient(#51005A 50%, #70007c); /* Standard syntax */
 
-    height: 690px;
+    height: 625px;
+
+    @media (max-width: 768px) {
+      height: 645px;
+    }
 
     h1 {
-      padding-top: 170px;
+      padding-top: 100px;
       padding-bottom: 30px;
       margin: 0;
       color: white;
@@ -42,7 +46,7 @@
 
     .btn {
       width: 150px;
-      margin-top: 30px;
+      margin-top: 15px;
       font-size: 11pt;
       background-color: white; 
       opacity: 0.75;
@@ -50,6 +54,11 @@
       font-weight: bold;
       border-color: white;
       transition: 0.3s ease;
+
+      @media (max-width: 768px) {
+        width: 120px;
+        font-size: 9pt;
+      }
     }
 
     .btn:hover {
@@ -60,6 +69,10 @@
 
     #first_button {
       text-align: right;
+    }
+
+    #second_button {
+      text-align: left;
     }
 
     .url-share {

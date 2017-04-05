@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get  'signup'  => 'users#new'
   get  'update'  => 'users#edit'
   post 'signup'  => 'users#create'
-  put  'update'  => 'users#update'
+  post 'update'  => 'users#update'
 
   get    'login'  => 'sessions#new'
   post   'login'  => 'sessions#create'

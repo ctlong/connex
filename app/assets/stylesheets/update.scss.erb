@@ -1,0 +1,66 @@
+#update {
+  section {
+    background: url(<%= asset_path "bg-pattern-light" %>), #51005A; /* For browsers that do not support gradients */
+    background: url(<%= asset_path "bg-pattern-light" %>), -webkit-radial-gradient(#51005A 50%, #70007c); /* For Safari 5.1 to 6.0 */
+    background: url(<%= asset_path "bg-pattern-light" %>), -o-radial-gradient(#51005A 50%, #70007c); /* For Opera 11.1 to 12.0 */
+    background: url(<%= asset_path "bg-pattern-light" %>), -moz-radial-gradient(#51005A 50%, #70007c); /* For Firefox 3.6 to 15 */
+    background: url(<%= asset_path "bg-pattern-light" %>), radial-gradient(#51005A 50%, #70007c); /* Standard syntax */
+
+    height: 650px;
+
+    @media (max-width: 768px) {
+      height: 840px;
+    }
+
+    h1 {
+      padding-top: 100px;
+      padding-bottom: 30px;
+      margin: 0;
+      color: white;
+      font-weight: 300;
+    }
+
+    form {
+      .btn {
+        width: 150px;
+        margin-top: 15px;
+        font-size: 11pt;
+        background-color: white; 
+        opacity: 0.75;
+        color: #51005A;
+        font-weight: bold;
+        border-color: white;
+        transition: 0.3s ease;
+
+        @media (max-width: 768px) {
+          width: 120px;
+          font-size: 9pt;
+        }
+      }
+
+      .btn:hover {
+        opacity: 1.0;
+        border-color: #51005A;
+        transform: scale(1.1, 1.1);
+      }
+
+      #first_button {
+        text-align: right;
+      }
+
+      #second_button {
+        text-align: left;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+
+        label {
+          color: white;
+          font-weight: 400;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
