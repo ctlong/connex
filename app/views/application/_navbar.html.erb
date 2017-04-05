@@ -16,9 +16,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+      <% if logged_in %>
+        <li><%= link_to 'Log Out', logout_path %></li>
+      <% else %>
         <li><a href="/#how_it_works" class="visible-lg">How It Works</a></li>
         <li><%= link_to 'Sign Up', signup_path %></li>
         <li><%= link_to 'Log In', login_path %></li>
+      <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   def new
     return @user = User.new unless logged_in?
     respond_to do |format|
-      format.html { redirect_to @current_user }
+      format.html { redirect_to account_path }
     end
   end
 
@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
         if @user.authenticate(user_params[:password])
           log_in(@user)
           remember(@user)
-          format.html { redirect_to @user }
+          format.html { redirect_to account_path }
         else
           @user.errors.add(:password, 'is incorrect')
         end

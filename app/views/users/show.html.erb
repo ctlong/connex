@@ -1,0 +1,67 @@
+<div id="account">
+  <%= render 'navbar', logged_in: true %>
+
+  <section>
+    <h1 class="text-center">My Profile</h1>
+    <div class="container">
+      <div class="row">
+        <label class="col-xs-4 col-xs-offset-2">Username</label>
+        <p class="col-xs-3"><%= @current_user.username %></p>
+      </div>
+
+      <div class="row">
+        <label class="col-xs-4 col-xs-offset-2">Name</label>
+        <% if @current_user.name.present? %>
+          <p class="col-xs-3"><%= @current_user.name %></p>
+        <% else %>
+        <%= link_to "_________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
+
+      <div class="row">
+        <label class="col-xs-4 col-xs-offset-2">Phone</label>
+      <% if @current_user.phone.present? %>
+        <p class="col-xs-3"><%= @current_user.phone %></p>
+      <% else %>
+        <%= link_to "_________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
+
+      <div class="row">
+        <label class="col-xs-4 col-xs-offset-2">Facebook</label>
+      <% if @current_user.facebook.present? %>
+        <p class="col-xs-3"><%= @current_user.facebook %></p>
+      <% else %>
+        <%= link_to "_________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
+
+      <div class="row">
+        <label class="col-xs-4 col-xs-offset-2">Instagram</label>
+      <% if @current_user.instagram.present? %>
+        <p class="col-xs-3"><%= @current_user.instagram %></p>
+      <% else %>
+        <%= link_to "_________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
+
+      <div class="row">
+        <label class="col-xs-4 col-xs-offset-2">Twitter</label>
+      <% if @current_user.twitter.present? %>
+        <p class="col-xs-3"><%= @current_user.twitter %></p>
+      <% else %>
+        <%= link_to "_________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
+
+      <div class="row">
+        <label class="col-xs-4 col-xs-offset-2">Snapchat</label>
+      <% if @current_user.snapchat.present? %>
+        <p class="col-xs-3"><%= @current_user.snapchat %></p>
+      <% else %>
+        <%= link_to "_________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
+    </div>
+  </section>
+</div>

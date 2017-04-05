@@ -5,8 +5,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "navbar";
-@import "pages";
-@import "users";
+@import "home";
+@import "authentication";
+@import "account";
 
 // Code-wide styles below
 footer {

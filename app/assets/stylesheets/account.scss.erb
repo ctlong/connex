@@ -1,0 +1,42 @@
+#account {
+  section {
+    background: url(<%= asset_path "bg-pattern-light" %>), #51005A; /* For browsers that do not support gradients */
+    background: url(<%= asset_path "bg-pattern-light" %>), -webkit-radial-gradient(#51005A 50%, #70007c); /* For Safari 5.1 to 6.0 */
+    background: url(<%= asset_path "bg-pattern-light" %>), -o-radial-gradient(#51005A 50%, #70007c); /* For Opera 11.1 to 12.0 */
+    background: url(<%= asset_path "bg-pattern-light" %>), -moz-radial-gradient(#51005A 50%, #70007c); /* For Firefox 3.6 to 15 */
+    background: url(<%= asset_path "bg-pattern-light" %>), radial-gradient(#51005A 50%, #70007c); /* Standard syntax */
+    height: 620px;
+
+    h1 {
+      padding-top: 170px;
+      padding-bottom: 30px;
+      margin: 0;
+      color: white;
+      font-weight: 300;
+    }
+
+    .row {
+      color: white;
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 12px;
+
+      label {
+        text-align: right;
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      p {
+        margin-bottom: 5px;
+      }
+
+      a {
+        color: white;
+      }
+      a:hover {
+        color: #f4b841;
+      }
+    }
+  }
+}
