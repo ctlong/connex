@@ -5,7 +5,8 @@
     background: url(<%= asset_path "bg-pattern-light" %>), -o-radial-gradient(#51005A 50%, #70007c); /* For Opera 11.1 to 12.0 */
     background: url(<%= asset_path "bg-pattern-light" %>), -moz-radial-gradient(#51005A 50%, #70007c); /* For Firefox 3.6 to 15 */
     background: url(<%= asset_path "bg-pattern-light" %>), radial-gradient(#51005A 50%, #70007c); /* Standard syntax */
-    height: 620px;
+
+    height: 690px;
 
     h1 {
       padding-top: 170px;
@@ -15,7 +16,7 @@
       font-weight: 300;
     }
 
-    .row {
+    .display-info {
       color: white;
       font-size: 18px;
       font-weight: 300;
@@ -35,6 +36,37 @@
         color: white;
       }
       a:hover {
+        color: #f4b841;
+      }
+    }
+
+    .btn {
+      width: 150px;
+      margin-top: 30px;
+      font-size: 11pt;
+      background-color: white; 
+      opacity: 0.75;
+      color: #51005A;
+      font-weight: bold;
+      border-color: white;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      opacity: 1.0;
+      border-color: #51005A;
+      transform: scale(1.1, 1.1);
+    }
+
+    #first_button {
+      text-align: right;
+    }
+
+    .url-share {
+      margin-top: 20px;
+      color: white;
+
+      a {
         color: #f4b841;
       }
     }

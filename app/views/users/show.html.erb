@@ -4,12 +4,12 @@
   <section>
     <h1 class="text-center">My Profile</h1>
     <div class="container">
-      <div class="row">
+      <div class="row display-info">
         <label class="col-xs-4 col-xs-offset-2">Username</label>
         <p class="col-xs-3"><%= @current_user.username %></p>
       </div>
 
-      <div class="row">
+      <div class="row display-info">
         <label class="col-xs-4 col-xs-offset-2">Name</label>
         <% if @current_user.name.present? %>
           <p class="col-xs-3"><%= @current_user.name %></p>
@@ -18,7 +18,7 @@
       <% end %>
       </div>
 
-      <div class="row">
+      <div class="row display-info">
         <label class="col-xs-4 col-xs-offset-2">Phone</label>
       <% if @current_user.phone.present? %>
         <p class="col-xs-3"><%= @current_user.phone %></p>
@@ -27,7 +27,7 @@
       <% end %>
       </div>
 
-      <div class="row">
+      <div class="row display-info">
         <label class="col-xs-4 col-xs-offset-2">Facebook</label>
       <% if @current_user.facebook.present? %>
         <p class="col-xs-3"><%= @current_user.facebook %></p>
@@ -36,7 +36,7 @@
       <% end %>
       </div>
 
-      <div class="row">
+      <div class="row display-info">
         <label class="col-xs-4 col-xs-offset-2">Instagram</label>
       <% if @current_user.instagram.present? %>
         <p class="col-xs-3"><%= @current_user.instagram %></p>
@@ -45,7 +45,7 @@
       <% end %>
       </div>
 
-      <div class="row">
+      <div class="row display-info">
         <label class="col-xs-4 col-xs-offset-2">Twitter</label>
       <% if @current_user.twitter.present? %>
         <p class="col-xs-3"><%= @current_user.twitter %></p>
@@ -54,13 +54,27 @@
       <% end %>
       </div>
 
-      <div class="row">
+      <div class="row display-info">
         <label class="col-xs-4 col-xs-offset-2">Snapchat</label>
       <% if @current_user.snapchat.present? %>
         <p class="col-xs-3"><%= @current_user.snapchat %></p>
       <% else %>
         <%= link_to "_________", update_path, class: "col-xs-3" %>
       <% end %>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2" id="first_button">
+          <%= link_to "Edit Info", update_path, class: "btn btn-default"  %>
+        </div>
+        <div class="col-xs-4">
+          <a class="btn btn-default">Copy Share Url</a>
+        </div>
+      </div>
+
+      <div class="text-center url-share">
+        <p>or, copy this url to share with your friends</p>
+        <a href="<%= @current_user.share_url %>"><%= @current_user.share_url %></a>
       </div>
     </div>
   </section>

@@ -38,4 +38,12 @@ class User < ApplicationRecord
     return false if remember_digest.nil?
     BCrypt::Password.new(remember_digest).is_password?(remember_token)
   end
+
+  def share_url
+    if Rails.env.production?
+      "https://morning-river-46142.herokuapp.com/share/#{id}"
+    else
+      "http://localhost:3000/share/#{id}"
+    end
+  end
 end
