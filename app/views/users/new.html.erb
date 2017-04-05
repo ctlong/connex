@@ -1,0 +1,40 @@
+<div id="sign-up">
+  <%= render 'navbar' %>
+
+  <header class="text-center">
+    <h1>Sign Up</h1>
+    <div class="container">
+      <div class="row">
+        <%= form_for(:user, url: signup_path, html: { class: "form-horizontal" }) do |f| %>
+          <div class="form-group">
+            <label for="inputUsername" class="col-sm-3 col-sm-offset-3 control-label">Username</label>
+            <div class="col-sm-3">
+              <%= f.text_field :username, required: true, class: "form-control",
+              id: "inputUsername", placeholder: "Username" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputPassword" class="col-sm-3 col-sm-offset-3 control-label">Password</label>
+            <div class="col-sm-3">
+              <%= f.password_field :password, required: true, class: "form-control",
+              id: "inputPassword", placeholder: "Password" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputPassword2" class="col-sm-3 col-sm-offset-3 control-label">Confirm Password</label>
+            <div class="col-sm-3">
+              <%= f.password_field :password_confirmation, required: true, class: "form-control",
+              id: "inputPassword2", placeholder: "Password Confirmation" %>
+            </div>
+          </div>
+
+          <div class="row centered">
+            <input type="submit" id="signupbtn" value="Sign Up" class="btn btn-outline btn-xl">
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </header>
+</div>

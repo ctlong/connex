@@ -1,0 +1,18 @@
+nav {
+  border-radius: 0;
+  opacity: 0.8; 
+  color: #51005A;
+
+  .navbar-header {
+    img {
+      height: 35px;
+    }
+    img:hover {
+      cursor: pointer;
+    }
+
+    .navbar-brand {
+      padding-top: 10px;
+    }
+  }
+}
