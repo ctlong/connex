@@ -68,14 +68,22 @@
           <%= link_to "Edit Info", update_path, class: "btn btn-default"  %>
         </div>
         <div class="col-xs-4" id="second_button">
-          <a class="btn btn-default">Copy Share Url</a>
+          <a class="btn btn-default" data-clipboard-target="#copy_text">Copy Share Url</a>
         </div>
       </div>
 
       <div class="text-center url-share">
         <p>or, copy this url to share with your friends</p>
-        <a href="<%= @current_user.share_url %>"><%= @current_user.share_url %></a>
+        <a href="<%= @current_user.share_url %>" id="copy_text"><%= @current_user.share_url %></a>
       </div>
     </div>
   </section>
 </div>
+
+<script type="text/javascript">
+  var clipboard = new Clipboard('.btn');
+
+  clipboard.on('success', function(e) {
+    e.clearSelection();
+  });
+</script>

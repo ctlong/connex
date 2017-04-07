@@ -60,10 +60,10 @@ class UsersController < ApplicationController
     end
   end
 
-  def public_view
+  def share
     @user = User.find_by_id(params[:id])
     if @user.present?
-      render 'public_view'
+      render 'share'
     else
       redirect_to root_path
     end
