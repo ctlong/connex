@@ -41,7 +41,7 @@ class User < ApplicationRecord
 
   def share_url
     if Rails.env.production?
-      "https://morning-river-46142.herokuapp.com/share/#{id}"
+      "https://connex-me.herokuapp.com/share/#{id}"
     else
       "http://localhost:3000/share/#{id}"
     end
