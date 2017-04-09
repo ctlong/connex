@@ -31,7 +31,7 @@ class UsersController < ApplicationController
       if @user.save
         log_in(@user)
         remember(@user)
-        format.html { redirect_to account_path, notice: 'User was successfully created.' }
+        format.html { redirect_to account_path }
       else
         format.html { render :new }
       end

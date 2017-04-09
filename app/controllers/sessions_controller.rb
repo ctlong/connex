@@ -24,7 +24,7 @@ class SessionsController < ApplicationController
         end
       else
         @user = User.new
-        @user.errors.add(:email, 'does not exist')
+        @user.errors.add(:username, 'does not exist')
       end
       format.html { render :new }
     end

@@ -3,6 +3,11 @@
 
   <section class="text-center">
     <h1>Log In</h1>
+    <% if @user.errors.any? %>
+      <% @user.errors.full_messages.each do |message| %>
+        <p class="error">* <%= message %></p>
+      <% end %>
+    <% end %>
     <div class="container">
       <div class="row">
         <%= form_for(:user, url: login_path, html: { class: "form-horizontal col-sm-12" }) do |f| %>
