@@ -1,4 +1,4 @@
-#account {
+.account {
   section {
     background: url(<%= asset_path "bg-pattern-light" %>), #51005A; /* For browsers that do not support gradients */
     background: url(<%= asset_path "bg-pattern-light" %>), -webkit-radial-gradient(#51005A 50%, #70007c); /* For Safari 5.1 to 6.0 */
@@ -6,7 +6,7 @@
     background: url(<%= asset_path "bg-pattern-light" %>), -moz-radial-gradient(#51005A 50%, #70007c); /* For Firefox 3.6 to 15 */
     background: url(<%= asset_path "bg-pattern-light" %>), radial-gradient(#51005A 50%, #70007c); /* Standard syntax */
 
-    min-height: 590px;
+    min-height: 600px;
 
     @media (max-width: 768px) {
       min-height: 630px;
@@ -77,6 +77,7 @@
 
     .url-share {
       margin-top: 20px;
+      margin-bottom: 20px;
       color: white;
 
       a {

@@ -1,4 +1,4 @@
-<div id="account">
+<div class="account">
   <%= render 'navbar', logged_in: true %>
 
   <section>
@@ -28,6 +28,15 @@
       </div>
 
       <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Email</label>
+      <% if @current_user.email.present? %>
+        <p class="col-xs-3"><%= @current_user.email %></p>
+      <% else %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
+
+      <div class="row display-info">
         <label class="col-xs-4 col-xs-offset-2">Facebook</label>
       <% if @current_user.facebook.present? %>
         <p class="col-xs-3"><%= @current_user.facebook %></p>
@@ -40,6 +49,15 @@
         <label class="col-xs-4 col-xs-offset-2">Instagram</label>
       <% if @current_user.instagram.present? %>
         <p class="col-xs-3"><%= @current_user.instagram %></p>
+      <% else %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
+
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">LinkedIn</label>
+      <% if @current_user.linkedin.present? %>
+        <p class="col-xs-3"><%= @current_user.linkedin %></p>
       <% else %>
         <%= link_to "___________", update_path, class: "col-xs-3" %>
       <% end %>

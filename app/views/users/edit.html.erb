@@ -29,6 +29,13 @@
           </div>
 
           <div class="form-group">
+            <label for="inputEmail" class="col-sm-3 col-sm-offset-2 control-label">Email</label>
+            <div class="col-sm-3">
+              <%= f.email_field :email, class: "form-control", id: "inputEmail", placeholder: "Email" %>
+            </div>
+          </div>
+
+          <div class="form-group">
             <label for="inputFacebook" class="col-sm-3 col-sm-offset-2 control-label">Facebook</label>
             <div class="col-sm-3">
               <%= f.text_field :facebook, class: "form-control", id: "inputFacebook", placeholder: "e.g. @john.smith" %>
@@ -39,6 +46,13 @@
             <label for="inputInstagram" class="col-sm-3 col-sm-offset-2 control-label">Instagram</label>
             <div class="col-sm-3">
               <%= f.text_field :instagram, class: "form-control", id: "inputInstagram", placeholder: "e.g. @smithy99" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputLinkedIn" class="col-sm-3 col-sm-offset-2 control-label">LinkedIn</label>
+            <div class="col-sm-3">
+              <%= f.text_field :linkedin, class: "form-control", id: "inputLinkedIn", placeholder: "e.g. @johnsmith" %>
             </div>
           </div>
 
@@ -56,7 +70,7 @@
             </div>
           </div>
 
-          <div class="row">
+          <div class="row" id="buttons">
             <div class="col-xs-4 col-xs-offset-2" id="first_button">
               <button type="submit" class="btn btn-default">Update</button>
             </div>
