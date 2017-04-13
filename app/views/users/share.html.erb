@@ -1,0 +1,65 @@
+<div class="account">
+  <%= render 'navbar', logged_in: false %>
+
+  <section>
+    <h1 class="text-center">Shared Profile</h1>
+    <div class="container">
+
+    <% if @user.name.present? %>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Name</label>
+        <p class="col-xs-3"><%= @user.name %></p>
+      </div>
+    <% end %>
+
+    <% if @user.phone.present? %>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Phone</label>
+        <p class="col-xs-3"><%= @user.phone %></p>
+      </div>
+    <% end %>
+
+    <% if @user.email.present? %>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Email</label>
+        <p class="col-xs-3"><%= @user.email %></p>
+      </div>
+    <% end %>
+
+    <% if @user.facebook.present? %>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Facebook</label>
+        <p class="col-xs-3"><%= @user.facebook %></p>
+      </div>
+    <% end %>
+
+    <% if @user.instagram.present? %>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Instagram</label>
+        <p class="col-xs-3"><%= @user.instagram %></p>
+      </div>
+    <% end %>
+
+    <% if @user.linkedin.present? %>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">LinkedIn</label>
+        <p class="col-xs-3"><%= @user.linkedin %></p>
+      </div>
+    <% end %>
+
+    <% if @user.twitter.present? %>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Twitter</label>
+        <p class="col-xs-3"><%= @user.twitter %></p>
+      </div>
+    <% end %>
+
+    <% if @user.snapchat.present? %>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Snapchat</label>
+        <p class="col-xs-3"><%= @user.snapchat %></p>
+      </div>
+    <% end %>
+    </div>
+  </section>
+</div>

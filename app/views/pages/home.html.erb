@@ -1,12 +1,48 @@
-<div class="row" id="homepage">
-  <div class="col-xs-12 text-center">
-    <%= image_tag "Title2", class: "col-xs-12" %>
-    <h3>Connecting the world together</h3>
-    <p>We provide a single platform for the simple exchange of every social connection a user may want.</p>
+<div id="home">
+  <%= render 'navbar', logged_in: false %>
 
-    <div class="col-xs-12">
-      <button class="col-xs-4 col-xs-offset-1 btn btn-default">Login</button>
-      <button class="col-xs-4 col-xs-offset-2 btn btn-default">Sign up</button>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="header-content">
+            <h1>Meet. Connect. Share.</h1>
+            <h3>Your social card is just a tap away.</h3>
+
+            <%= link_to 'Get Started', signup_path, class: "btn btn-default btn-lg"%>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </header>
+
+  <section id="how_it_works" class="text-center visible-lg">
+    <h2>How It Works</h2>
+    <div class="container">
+      <%= image_tag 'purple-arrow.png', alt: 'arrow', class: 'arrow', id: 'arrow1' %>
+      <%= image_tag 'purple-arrow.png', alt: 'arrow', class: 'arrow', id: 'arrow2' %>
+      <div class="row centered">
+        <div class="col-sm-4">
+          <h3> Choose what apps you want to share </h3>
+        </div>
+        <div class="col-sm-4">
+          <h3> Enter the phone number you want to share with </h3>
+        </div>
+        <div class="col-sm-4">
+          <h3> Connect </h3>
+        </div>
+      </div>
+      <div class="row centered">
+        <div class="col-sm-4">
+          <%= image_tag 'select-apps.png', alt: 'select apps', width: '80%' %>
+        </div>
+        <div class="col-sm-4">
+          <%= image_tag 'purple-phone.png', alt: 'purple phone' %>
+        </div>
+        <div class="col-sm-4">
+          <%= image_tag 'purple-add.png', alt: 'purple add' %>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

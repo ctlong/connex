@@ -1,6 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Connex</title>
     <%= csrf_meta_tags %>
 
@@ -8,9 +14,18 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <div class="container">
-      <%= yield %>
-    </div>
+  <body id="page-top">
+    <%= yield %>
+
+    <footer>
+      <div class="container text-center">
+        <p>&copy; 2017 Connex. All Rights Reserved.</p>
+        <ul class="list-inline">
+          <li>
+            <a href="#page-top">Return to Top</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,44 +1,107 @@
-<p id="notice"><%= notice %></p>
+<div class="account">
+  <%= render 'navbar', logged_in: true %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+  <section>
+    <h1 class="text-center">My Profile</h1>
+    <div class="container">
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Username</label>
+        <p class="col-xs-3"><%= @current_user.username %></p>
+      </div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Name</label>
+        <% if @current_user.name.present? %>
+          <p class="col-xs-3"><%= @current_user.name %></p>
+        <% else %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @user.phone %>
-</p>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Phone</label>
+      <% if @current_user.phone.present? %>
+        <p class="col-xs-3"><%= @current_user.phone %></p>
+      <% else %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
 
-<p>
-  <strong>Snapchat:</strong>
-  <%= @user.snapchat %>
-</p>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Email</label>
+      <% if @current_user.email.present? %>
+        <p class="col-xs-3"><%= @current_user.email %></p>
+      <% else %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
 
-<p>
-  <strong>Facebook:</strong>
-  <%= @user.facebook %>
-</p>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Facebook</label>
+      <% if @current_user.facebook.present? %>
+        <p class="col-xs-3"><%= @current_user.facebook %></p>
+      <% else %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
 
-<p>
-  <strong>Linkedin:</strong>
-  <%= @user.linkedin %>
-</p>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Instagram</label>
+      <% if @current_user.instagram.present? %>
+        <p class="col-xs-3"><%= @current_user.instagram %></p>
+      <% else %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
 
-<p>
-  <strong>Instagram:</strong>
-  <%= @user.instagram %>
-</p>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">LinkedIn</label>
+      <% if @current_user.linkedin.present? %>
+        <p class="col-xs-3"><%= @current_user.linkedin %></p>
+      <% else %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
 
-<p>
-  <strong>Twitter:</strong>
-  <%= @user.twitter %>
-</p>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Twitter</label>
+      <% if @current_user.twitter.present? %>
+        <p class="col-xs-3"><%= @current_user.twitter %></p>
+      <% else %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+      <div class="row display-info">
+        <label class="col-xs-4 col-xs-offset-2">Snapchat</label>
+      <% if @current_user.snapchat.present? %>
+        <p class="col-xs-3"><%= @current_user.snapchat %></p>
+      <% else %>
+        <%= link_to "___________", update_path, class: "col-xs-3" %>
+      <% end %>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 col-xs-offset-2" id="first_button">
+          <%= link_to "Edit Info", update_path, class: "btn btn-default"  %>
+        </div>
+        <div class="col-xs-4" id="second_button">
+          <a class="btn btn-default" data-clipboard-target="#copy_text">Copy Share Url</a>
+        </div>
+      </div>
+
+      <div class="text-center url-share">
+        <p>or, copy this url to share with your friends</p>
+        <a href="<%= @current_user.share_url %>" id="copy_text"><%= @current_user.share_url %></a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script type="text/javascript">
+  var clipboard = new Clipboard('.btn');
+
+  clipboard.on('success', function(e) {
+    e.clearSelection();
+  });
+</script>

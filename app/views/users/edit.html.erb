@@ -1,6 +1,85 @@
-<h1>Editing User</h1>
+<div id="update">
+  <%= render 'navbar', logged_in: true %>
 
-<%= render 'form', user: @user %>
+  <section class="text-center">
+    <h1>Edit My Account</h1>
+    <div class="container">
+      <div class="row">
+        <%= form_for(:user, url: update_path, html: { class: "form-horizontal col-sm-12" }) do |f| %>
+          <div class="form-group">
+            <label for="inputUsername" class="col-sm-3 col-sm-offset-2 control-label">Username</label>
+            <div class="col-sm-3">
+              <%= f.text_field :username, disabled: true, class: "form-control",
+              id: "inputUsername", placeholder: "Username" %>
+            </div>
+          </div>
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+          <div class="form-group">
+            <label for="inputName" class="col-sm-3 col-sm-offset-2 control-label">Name</label>
+            <div class="col-sm-3">
+              <%= f.text_field :name, class: "form-control", id: "inputName", placeholder: "Name" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputPhone" class="col-sm-3 col-sm-offset-2 control-label">Phone</label>
+            <div class="col-sm-3">
+              <%= f.phone_field :phone, class: "form-control", id: "inputPhone", placeholder: "Phone" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputEmail" class="col-sm-3 col-sm-offset-2 control-label">Email</label>
+            <div class="col-sm-3">
+              <%= f.email_field :email, class: "form-control", id: "inputEmail", placeholder: "Email" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputFacebook" class="col-sm-3 col-sm-offset-2 control-label">Facebook</label>
+            <div class="col-sm-3">
+              <%= f.text_field :facebook, class: "form-control", id: "inputFacebook", placeholder: "e.g. @john.smith" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputInstagram" class="col-sm-3 col-sm-offset-2 control-label">Instagram</label>
+            <div class="col-sm-3">
+              <%= f.text_field :instagram, class: "form-control", id: "inputInstagram", placeholder: "e.g. @smithy99" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputLinkedIn" class="col-sm-3 col-sm-offset-2 control-label">LinkedIn</label>
+            <div class="col-sm-3">
+              <%= f.text_field :linkedin, class: "form-control", id: "inputLinkedIn", placeholder: "e.g. @johnsmith" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputTwitter" class="col-sm-3 col-sm-offset-2 control-label">Twitter</label>
+            <div class="col-sm-3">
+              <%= f.text_field :twitter, class: "form-control", id: "inputTwitter", placeholder: "e.g. @mysmithj" %>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputSnapchat" class="col-sm-3 col-sm-offset-2 control-label">Snapchat</label>
+            <div class="col-sm-3">
+              <%= f.text_field :snapchat, class: "form-control", id: "inputSnapchat", placeholder: "e.g. @j.smithpants" %>
+            </div>
+          </div>
+
+          <div class="row" id="buttons">
+            <div class="col-xs-4 col-xs-offset-2" id="first_button">
+              <button type="submit" class="btn btn-default">Update</button>
+            </div>
+            <div class="col-xs-4" id="second_button">
+              <%= link_to "Cancel", account_path, class: "btn btn-default" %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+</div>

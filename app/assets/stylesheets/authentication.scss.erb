@@ -1,0 +1,44 @@
+.authentication {
+  section {
+    background-image: url(<%= asset_path 'header-no-app.png' %>);
+    min-height: 620px;
+
+    h1 {
+      padding-top: 170px;
+      padding-bottom: 30px;
+      margin: 0;
+      color: white;
+      font-weight: 300;
+    }
+
+    form {
+      label {
+        color: white;
+        font-weight: 300;
+        font-size: 18px;
+      }
+
+      button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 11pt;
+        background-color: white; 
+        opacity: 0.75;
+        color: #51005A;
+        font-weight: bold;
+        border-color: white;
+        transition: 0.3s ease;
+      }
+
+      button:hover {
+        opacity: 1.0;
+        border-color: #51005A;
+        transform: scale(1.1, 1.1);
+      }
+    }
+
+    .error {
+      color: red;
+    }
+  }
+}
