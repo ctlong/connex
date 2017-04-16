@@ -7,59 +7,65 @@
 
     <% if @user.name.present? %>
       <div class="row display-info">
-        <label class="col-xs-4 col-xs-offset-2">Name</label>
+        <label class="col-xs-4 col-xs-offset-1 col-sm-offset-2">Name</label>
         <p class="col-xs-3"><%= @user.name %></p>
       </div>
     <% end %>
 
     <% if @user.phone.present? %>
       <div class="row display-info">
-        <label class="col-xs-4 col-xs-offset-2">Phone</label>
+        <label class="col-xs-4 col-xs-offset-1 col-sm-offset-2">Phone</label>
         <p class="col-xs-3"><%= @user.phone %></p>
       </div>
     <% end %>
 
     <% if @user.email.present? %>
       <div class="row display-info">
-        <label class="col-xs-4 col-xs-offset-2">Email</label>
+        <label class="col-xs-4 col-xs-offset-1 col-sm-offset-2">Email</label>
         <p class="col-xs-3"><%= @user.email %></p>
       </div>
     <% end %>
 
     <% if @user.facebook.present? %>
       <div class="row display-info">
-        <label class="col-xs-4 col-xs-offset-2">Facebook</label>
+        <label class="col-xs-4 col-xs-offset-1 col-sm-offset-2">Facebook</label>
         <p class="col-xs-3"><%= @user.facebook %></p>
       </div>
     <% end %>
 
     <% if @user.instagram.present? %>
       <div class="row display-info">
-        <label class="col-xs-4 col-xs-offset-2">Instagram</label>
+        <label class="col-xs-4 col-xs-offset-1 col-sm-offset-2">Instagram</label>
         <p class="col-xs-3"><%= @user.instagram %></p>
       </div>
     <% end %>
 
     <% if @user.linkedin.present? %>
       <div class="row display-info">
-        <label class="col-xs-4 col-xs-offset-2">LinkedIn</label>
+        <label class="col-xs-4 col-xs-offset-1 col-sm-offset-2">LinkedIn</label>
         <p class="col-xs-3"><%= @user.linkedin %></p>
       </div>
     <% end %>
 
     <% if @user.twitter.present? %>
       <div class="row display-info">
-        <label class="col-xs-4 col-xs-offset-2">Twitter</label>
+        <label class="col-xs-4 col-xs-offset-1 col-sm-offset-2">Twitter</label>
         <p class="col-xs-3"><%= @user.twitter %></p>
       </div>
     <% end %>
 
     <% if @user.snapchat.present? %>
       <div class="row display-info">
-        <label class="col-xs-4 col-xs-offset-2">Snapchat</label>
+        <label class="col-xs-4 col-xs-offset-1 col-sm-offset-2">Snapchat</label>
         <p class="col-xs-3"><%= @user.snapchat %></p>
       </div>
     <% end %>
+
+      <div class="text-center conversion">
+        <p>Want to share your own social card?</p>
+        <%= link_to 'Log In', login_path, class: 'btn btn-default' %>
+        <%= link_to 'Register Now', signup_path, class: 'btn btn-default' %>
+      </div>
     </div>
   </section>
 </div>
